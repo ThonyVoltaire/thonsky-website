@@ -1,0 +1,383 @@
+ @import url('https://fonts.googleapis.com/css2?family=Syne:wght@400..800&display=swap');
+
+ @keyframes animationname {}
+
+ /* .blanc {
+     color: #FFFFFF;
+     text-align: justify;
+ }
+
+ .rouge {
+     color: #990000;
+ }
+
+ .controls {
+     width: 20px;
+     height: 50px;
+ }*/
+
+ .img {
+     width: 380px;
+     height: 258px;
+     position: relative;
+     margin-top: -650px;
+     margin-left: 960px;
+     
+ }
+
+ audio {
+     width: 200px;
+     height: 450px;
+     position: relative;
+     margin-top: -760px;
+     margin-left: 1080px;
+
+ }
+
+ /* nav {
+	     width:101%;
+		 margin:0 auto;
+		 background-color:white;
+		 position:relative;
+		 top:-720px;
+		 margin-left:-6px;  
+	   }*/
+ .yellow {
+     color: red;
+     text-align: center;
+ }
+
+ /* fieldset {
+     width: 50%;
+     border-color: #FFFFFF;
+     border-radius: 6px;
+ }*/
+
+ h1 {
+     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+ }
+
+ h2 {
+     font-style: italic;
+ }
+
+ .conteneur {
+     margin-top: -570px;
+     position: relative;
+ }
+
+
+ .vwxy {
+     border: 2px inset whitesmoke;
+     background: url(Ivory2.jpg) no-repeat;
+     text-align: justify;
+     margin-top: 440px;
+     margin-left: 34%;
+     width: 780px;
+     height: 750px;
+     position: relative;
+     transform: translate(-50%, -50%);
+     padding: 35px;
+    
+ }
+ .black{
+    color:black;
+    margin-inline: 25px;
+    margin-block: 5px;
+    text-align: justify;
+ }
+
+ .vwxy spam {
+     display: block;
+ }
+
+
+ @keyframes text {
+     0% {
+         color: black;
+         margin-bottom: -20px;
+     }
+
+     20% {
+         letter-spacing: 15px;
+         margin-bottom: -40px;
+     }
+
+     85% {
+         letter-spacing: 4px;
+         margin-bottom: -20px;
+     }
+
+ /*audio {
+  width: 100%; /* Make the player span the full width of its container */
+ /* max-width: 60px; /* Limit the maximum width */
+  /*margin: 20px auto; /* Center the player horizontally */
+  /*border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #f0f0f0;
+  margin-left: 900px;
+}*/
+ }
+ 
+ .Radio {
+       	border: 2px outset white;
+       	background: url(Ivory1.jpg) no-repeat;
+       	/*display: 4px;*/
+       	text-align: justify;
+       	margin-top: -50px;
+       	margin-left: 86.3%;
+       	width: 350.5px;
+       	height: 400px;
+       	position: relative;
+        transform: translate(-50%, -50%);
+       	padding: 10px;
+		overflow: hidden;
+		
+       }
+
+       .Radio spam {
+        display: block;
+       /*	color: antiquewhite;*/
+       }
+
+.Radio p {
+  margin: 0; /* Supprimer la marge par défaut du paragraphe */
+  white-space: nowrap; /* Empêcher le texte de passer à la ligne */
+  animation: scroll-left 20s linear infinite; /* Nom de l'animation, durée, etc. */
+  color: red;
+  font-size: 20px;
+}
+
+/* Dans votre fichier style.css */
+/*audio {
+  width: 300px;
+  border-radius: 10px;
+}*/
+/* Pour les Barres*/
+.Whiterow {
+  background-color:white;/* Couleur de fond rouge */
+  color:#FF0000; /* Texte blanc */
+  padding: 10px; /* Espacement intérieur */
+  text-align: center; /* Centrer le texte */
+  position: fixed; /* Pour qu'il reste en place en haut */
+  top: 97%; /* Le placer tout en haut */
+  left: 0%; /* Le placer tout à gauche */
+  width: 100%; /* Largeur complète */
+  height:3%;
+  z-index: 100; /* S'assurer qu'il est au-dessus des autres éléments */
+  overflow: hidden; /* Cache le contenu qui dépasse */
+  box-sizing: border-box; /* Inclure padding et bordure dans la largeur totale */
+}
+
+.Whiterow p {
+  margin: 0; /* Supprimer la marge par défaut du paragraphe */
+ white-space: nowrap; /* Empêcher le texte de passer à la ligne */
+animation: scroll-left 50s linear infinite; /* Nom de l'animation, durée, etc. */
+font-size:28px;
+font-family:bold;
+font-weight: bold;
+}
+
+.Whiterow1 {
+  background-color:white;/* Couleur de fond rouge */
+  color:#FF0000; /* Texte blanc */
+  padding: 10px; /* Espacement intérieur */
+  text-align: center; /* Centrer le texte */
+  position: fixed; /* Pour qu'il reste en place en haut */
+  top: 0%; /* Le placer tout en haut */
+  left: 0%; /* Le placer tout à gauche */
+  width: 100%; /* Largeur complète */
+  height:3%;
+  z-index: 100; /* S'assurer qu'il est au-dessus des autres éléments */
+  overflow: hidden; /* Cache le contenu qui dépasse */
+  box-sizing: border-box; /* Inclure padding et bordure dans la largeur totale */
+}
+
+.Whiterow1 p {
+  margin: 0; /* Supprimer la marge par défaut du paragraphe */
+ white-space: nowrap; /* Empêcher le texte de passer à la ligne */
+animation: scroll-left 50s linear infinite; /* Nom de l'animation, durée, etc. */
+font-size:28px;
+font-family:bold;
+font-weight: bold;
+}
+
+@keyframes scroll-left {
+  0% {
+    transform: translateX(100%); /* Commencer à droite de l'écran */
+ }
+  100% {
+    transform: translateX(-100%); /* Finir à gauche de l'écran */
+ }
+}
+/* Pour les Pubs*/
+.Pub1 {
+       	border: 2px outset white;
+        background: url(Forpub1.jpg) no-repeat;
+       	/*display: 4px;*/
+       	text-align: justify;
+       	margin-top:10px;
+       	margin-left: 86.3%;
+       	width: 235px;
+       	height: 298px;
+       	position: relative;
+        transform: translate(-50%, -50%);
+       	padding: 10px;
+		overflow: hidden;
+		
+       }
+
+       .Pub1 spam {
+        display: block;
+       /*	color: antiquewhite;*/
+       }
+
+.Pub1 p {
+  margin: 0; /* Supprimer la marge par défaut du paragraphe */
+  white-space: nowrap; /* Empêcher le texte de passer à la ligne */
+  animation: scroll-left 20s linear infinite; /* Nom de l'animation, durée, etc. */
+  color:white;
+  font-size: 20px;
+}
+
+
+.Pub2{
+       	border: 2px outset white;
+        background: url(Forpub2.jpg) no-repeat;
+       	/*display: 4px;*/
+       	text-align: justify;
+       	margin-top:-24.1%;
+       	margin-left: 62%;
+       	width: 235px;
+       	height: 298px;
+       	position: relative;
+        transform: translate(-50%, -50%);
+       	padding: 10px;
+		overflow: hidden;
+		
+       }
+
+       .Pub2 spam {
+        display: block;
+       /*	color: antiquewhite;*/
+       }
+
+.Pub2 p {
+  margin: 0; /* Supprimer la marge par défaut du paragraphe */
+  white-space: nowrap; /* Empêcher le texte de passer à la ligne */
+  animation: scroll-left 20s linear infinite; /* Nom de l'animation, durée, etc. */
+  color:white;
+  font-size: 20px;
+}
+
+
+
+.Pub3{
+       	border: 2px outset white;
+        background: url(Forpub3.jpg) no-repeat;
+       	/*display: 4px;*/
+       	text-align: justify;
+       	margin-top:-24.1%;
+       	margin-left: 38%;
+       	width: 235px;
+       	height: 298px;
+       	position: relative;
+        transform: translate(-50%, -50%);
+       	padding: 10px;
+		overflow: hidden;
+		
+       }
+
+       .Pub3 spam {
+        display: block;
+       /*	color: antiquewhite;*/
+       }
+
+.Pub3 p {
+  margin: 0; /* Supprimer la marge par défaut du paragraphe */
+  white-space: nowrap; /* Empêcher le texte de passer à la ligne */
+  animation: scroll-left 20s linear infinite; /* Nom de l'animation, durée, etc. */
+  color:white;
+  font-size: 20px;
+}
+
+
+
+.Pub4{
+       	border: 2px outset white;
+        background: url(Forpub4.jpg) no-repeat;
+       	/*display: 4px;*/
+       	text-align: justify;
+       	margin-top:-24.1%;
+       	margin-left: 14%;
+       	width: 235px;
+       	height: 298px;
+       	position: relative;
+        transform: translate(-50%, -50%);
+       	padding: 10px;
+		overflow: hidden;
+		
+       }
+
+       .Pub4 spam {
+        display: block;
+       /*	color: antiquewhite;*/
+       }
+
+.Pub4 p {
+  margin: 0; /* Supprimer la marge par défaut du paragraphe */
+  white-space: nowrap; /* Empêcher le texte de passer à la ligne */
+  animation: scroll-left 20s linear infinite; /* Nom de l'animation, durée, etc. */
+  color:white;
+  font-size: 20px;
+}
+
+div {
+  position: absolute;
+  /* top, left, right, bottom définissent sa position */
+}
+
+
+.boutons-vote {
+    display: flex;
+    gap: 20px; /* Espacement entre les boutons */
+}
+
+.bouton-vote {
+    padding: 5px 10px;
+    font-size: 16px;
+    cursor: pointer;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f0f0f0;
+    display:inline-block;
+    align-items: center;
+    margin: 20px;
+    position: relative;
+}
+
+.bouton-vote:hover {
+    background-color: #e0e0e0;
+}
+
+.icone {
+    margin-right: 8px;
+}
+
+.compteur {
+    margin-left: 10px;
+    font-weight: bold;
+    color: #007bff;
+}
+
+/* Styles pour les boutons actifs (facultatif) */
+.bouton-vote.active {
+    background-color: #007bff;
+    color: white;
+    border-color: #0056b3;
+}
+.bouton-vote.active .compteur {
+    color: white;
+}
+
+.

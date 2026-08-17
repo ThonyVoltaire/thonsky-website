@@ -1,0 +1,305 @@
+	@import url('https://fonts.googleapis.com/css2?family=Syne:wght@400..800&display=swap');
+	@import url('https://fonts.googleapis.com/css2?family=Fjord+One&family=Roboto:ital,wght@0,100..900;1,100..900&family=Syne&display=swap');
+	@import url('https://fonts.googleapis.com/css2?family=Fjord+One&family=Roboto:ital,wght@0,100..900;1,100..900&family=Syne&family=Ubuntu+Sans:ital,wght@0,100..800;1,100..800&display=swap');
+
+	@keyframes animationname {}
+	@font-face{
+    font-family:MyHarrington;
+    src: url("fonts/HARRINGTON.TIF");
+}
+
+	.klmn {
+		/*border: 2px inset white;*/
+		/*background: url(download1.jpeg) no-repeat;*/
+		background-color: rgba(255, 255, 255, 0.13);
+		margin: center;
+		text-align: justify;
+		margin-top: 520px;
+		margin-left: 670px;
+		width: 790px;
+		height: 900px;
+		position: relative;
+		transform: translate(-50%, -50%);
+		padding: 30px;
+	}
+	.img{
+		display: block;
+		margin-top: -183%;
+		position: relative;
+	}
+
+/*	.klmn spam {
+		display: block; 
+	}*/
+
+	@keyframes text {
+		0% {
+			color: white;
+			margin-bottom: -20px;
+		}
+
+		20% {
+			letter-spacing: 15px;
+			margin-bottom: -40px;
+		}
+
+		85% {
+			letter-spacing: 8px;
+			margin-bottom: -40px;
+		}
+	}
+/*	.conteneur{
+			position: relative;
+			margin-bottom: -900px;
+			margin-left: 1000px;
+	}*/
+
+	.cont{
+		position: relative;
+		margin-left: 560px;
+		margin-top: -1120px;
+	}
+	.koul{
+		color:red;
+		margin-top: 100px;
+		margin-left:100px;
+		text-shadow: 2px 2px 5px white;
+	}
+	.koukoul{
+		color:white;
+		margin-top: 20px;
+		 font-family: MyHarrington;
+	}
+
+	
+.Whiterow {
+  background-color:white;/* Couleur de fond rouge */
+  color:#FF0000; /* Texte blanc */
+  padding: 10px; /* Espacement intérieur */
+  text-align: center; /* Centrer le texte */
+  position: fixed; /* Pour qu'il reste en place en haut */
+  top: 97%; /* Le placer tout en haut */
+  left: 0%; /* Le placer tout à gauche */
+  width: 100%; /* Largeur complète */
+  height:3%;
+  z-index: 100; /* S'assurer qu'il est au-dessus des autres éléments */
+  overflow: hidden; /* Cache le contenu qui dépasse */
+  box-sizing: border-box; /* Inclure padding et bordure dans la largeur totale */
+}
+
+.Whiterow p {
+  margin: 0; /* Supprimer la marge par défaut du paragraphe */
+ white-space: nowrap; /* Empêcher le texte de passer à la ligne */
+animation: scroll-left 50s linear infinite; /* Nom de l'animation, durée, etc. */
+font-size:28px;
+font-family:bold;
+font-weight: bold;
+}
+
+.Whiterow1 {
+  background-color:white;/* Couleur de fond rouge */
+  color:#FF0000; /* Texte blanc */
+  padding: 10px; /* Espacement intérieur */
+  text-align: center; /* Centrer le texte */
+  position: fixed; /* Pour qu'il reste en place en haut */
+  top: 0%; /* Le placer tout en haut */
+  left: 0%; /* Le placer tout à gauche */
+  width: 100%; /* Largeur complète */
+  height:3%;
+  z-index: 100; /* S'assurer qu'il est au-dessus des autres éléments */
+  overflow: hidden; /* Cache le contenu qui dépasse */
+  box-sizing: border-box; /* Inclure padding et bordure dans la largeur totale */
+}
+
+.Whiterow1 p {
+  margin: 0; /* Supprimer la marge par défaut du paragraphe */
+ white-space: nowrap; /* Empêcher le texte de passer à la ligne */
+animation: scroll-left 50s linear infinite; /* Nom de l'animation, durée, etc. */
+font-size:28px;
+font-family:bold;
+font-weight: bold;
+}
+
+@keyframes scroll-left {
+  0% {
+    transform: translateX(100%); /* Commencer à droite de l'écran */
+ }
+  100% {
+    transform: translateX(-100%); /* Finir à gauche de l'écran */
+ }
+}
+
+.Pub1 {
+       	border: 2px outset white;
+        background: url(Hst1.jpg) no-repeat;
+       	/*display: 4px;*/
+       	text-align: justify;
+       	margin-top:-25%;
+       	margin-left: 120px;
+       	width: 180px;
+       	height: 250px;
+       	position: relative;
+        transform: translate(-50%, -50%);
+       	padding: 10px;
+		overflow: hidden;
+		
+       }
+
+       .Pub1 spam {
+        display: block;
+       /*	color: antiquewhite;*/
+       }
+
+.Pub1 p {
+  margin: 0; /* Supprimer la marge par défaut du paragraphe */
+  white-space: nowrap; /* Empêcher le texte de passer à la ligne */
+  animation: scroll-left 20s linear infinite; /* Nom de l'animation, durée, etc. */
+  color:red;
+  font-size: 20px;
+}
+
+	   .Pub2 {
+       	border: 2px outset white;
+        background: url(Hst2.jpg) no-repeat;
+       	/*display: 4px;*/
+       	text-align: justify;
+       	margin-top:5%;
+       	margin-left: 120px;
+       	width: 180px;
+       	height: 250px;
+       	position: relative;
+        transform: translate(-50%, -50%);
+       	padding: 10px;
+		overflow: hidden;
+		
+       }
+
+       .Pub2 spam {
+        display: block;
+       /*	color: antiquewhite;*/
+       }
+
+.Pub2 p {
+  margin: 0; /* Supprimer la marge par défaut du paragraphe */
+  white-space: nowrap; /* Empêcher le texte de passer à la ligne */
+  animation: scroll-left 20s linear infinite; /* Nom de l'animation, durée, etc. */
+  color:red;
+  font-size: 20px;
+}
+
+	   .Pub3 {
+       	border: 2px outset white;
+        background: url(Hst3.jpg) no-repeat;
+       	/*display: 4px;*/
+       	text-align: justify;
+       	margin-top:5%;
+       	margin-left: 120px;
+       	width: 180px;
+       	height: 250px;
+       	position: relative;
+        transform: translate(-50%, -50%);
+       	padding: 10px;
+		overflow: hidden;
+		
+       }
+
+       .Pub3 spam {
+        display: block;
+       /*	color: antiquewhite;*/
+       }
+
+.Pub3 p {
+  margin: 0; /* Supprimer la marge par défaut du paragraphe */
+  white-space: nowrap; /* Empêcher le texte de passer à la ligne */
+  animation: scroll-left 20s linear infinite; /* Nom de l'animation, durée, etc. */
+  color:red;
+  font-size: 20px;
+}
+
+
+	   .Pub4 {
+       	border: 2px outset white;
+        background: url(Hst4.jpg) no-repeat;
+       	/*display: 4px;*/
+       	text-align: justify;
+       	margin-top:-71.5%;
+       	margin-left:1220px;
+       	width: 180px;
+       	height: 250px;
+       	position: relative;
+        transform: translate(-50%, -50%);
+       	padding: 10px;
+		overflow: hidden;
+		
+       }
+
+       .Pub4 spam {
+        display: block;
+       /*	color: antiquewhite;*/
+       }
+
+.Pub4 p {
+  margin: 0; /* Supprimer la marge par défaut du paragraphe */
+  white-space: nowrap; /* Empêcher le texte de passer à la ligne */
+  animation: scroll-left 20s linear infinite; /* Nom de l'animation, durée, etc. */
+  color:red;
+  font-size: 20px;
+}
+	   
+	   	   .Pub5 {
+       	border: 2px outset white;
+        background: url(Hst5.jpg) no-repeat;
+       	/*display: 4px;*/
+       	text-align: justify;
+       	margin-top:5%;
+       	margin-left:1220px;
+       	width: 180px;
+       	height: 250px;
+       	position: relative;
+        transform: translate(-50%, -50%);
+       	padding: 10px;
+		overflow: hidden;
+		
+       }
+
+       .Pub5 spam {
+        display: block;
+       /*	color: antiquewhite;*/
+       }
+
+.Pub5 p {
+  margin: 0; /* Supprimer la marge par défaut du paragraphe */
+  white-space: nowrap; /* Empêcher le texte de passer à la ligne */
+  animation: scroll-left 20s linear infinite; /* Nom de l'animation, durée, etc. */
+  color:red;
+  font-size: 20px;
+
+
+
+	   	   .Pub6 {
+       	border: 2px outset white;
+        background: url(Hst6.jpg) no-repeat;
+       	/*display: 4px;*/
+       	text-align: justify;
+       	margin-top:-30.5%;
+       	margin-left:1220px;
+       	width: 180px;
+       	height: 250px;
+       	position: relative;
+        transform: translate(-50%, -50%);
+       	padding: 10px;
+		overflow: hidden;
+		
+       }
+
+       .Pub6 spam {
+        display: block;
+       /*	color: antiquewhite;*/
+       }
+.Pub6 p {
+  margin: 0; /* Supprimer la marge par défaut du paragraphe */
+  white-space: nowrap; /* Empêcher le texte de passer à la ligne */
+  animation: scroll-left 20s linear infinite; /* Nom de l'animation, durée, etc. */
+  color:white;
+  font-size: 20px;
+}

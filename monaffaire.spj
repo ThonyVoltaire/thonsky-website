@@ -1,0 +1,46 @@
+version=7
+hindex=40
+filefolders=0
+folders=0
+files=8&relativepath=0
+h=2&type=2&path=C%3A%5CUsers%5CAARONS%5CDesktop%5CDiaporama%5Cph1.jpg.jpg&duration=5000&stereoformat=0&folder=0&creation=2023-08-31 22:26:44
+h=5&type=2&path=C%3A%5CUsers%5CAARONS%5CPictures%5CFor%20my%20Web%20Site%5CFB_IMG_1685827788803.jpg&duration=5000&stereoformat=0&folder=0&creation=2023-07-30 19:05:38
+h=11&type=2&path=C%3A%5CUsers%5CAARONS%5CPictures%5CFor%20my%20Web%20Site%5C20230618_090852.jpg&duration=5000&stereoformat=0&folder=0&creation=2023-07-30 19:05:29
+h=16&type=2&path=C%3A%5CUsers%5CAARONS%5CPictures%5CFor%20my%20Web%20Site%5CFB_IMG_1685845536141.jpg&duration=5000&stereoformat=0&folder=0&creation=2023-07-30 19:05:37
+h=22&type=2&path=C%3A%5CUsers%5CAARONS%5CPictures%5CFor%20my%20Web%20Site%5CFB_IMG_1685845570933.jpg&duration=5000&stereoformat=0&folder=0&creation=2023-07-30 19:05:37
+h=27&type=2&path=C%3A%5CUsers%5CAARONS%5CPictures%5CFor%20my%20Web%20Site%5CFB_IMG_1685845562924.jpg&duration=5000&stereoformat=0&folder=0&creation=2023-07-30 19:05:37
+h=32&type=2&path=C%3A%5CUsers%5CAARONS%5CPictures%5CFor%20my%20Web%20Site%5CFB_IMG_1685845611794.jpg&duration=5000&stereoformat=0&folder=0&creation=2023-07-30 19:05:37
+h=35&type=2&path=C%3A%5CUsers%5CAARONS%5CPictures%5CFor%20my%20Web%20Site%5CFB_IMG_1685845645228.jpg&duration=5000&stereoformat=0&folder=0&creation=2023-07-30 19:05:36
+clips=8
+h=3&hfile=2&hfolder=0&name=ph1.jpg.jpg&in=0&out=5000&small=2&orig_size=0
+h=6&hfile=5&hfolder=0&name=FB_IMG_1685827788803.jpg&in=0&out=5000&small=2&orig_size=0
+h=12&hfile=11&hfolder=0&name=20230618_090852.jpg&in=0&out=5000&small=2&orig_size=0
+h=17&hfile=16&hfolder=0&name=FB_IMG_1685845536141.jpg&in=0&out=5000&small=2&orig_size=0
+h=23&hfile=22&hfolder=0&name=FB_IMG_1685845570933.jpg&in=0&out=5000&small=2&orig_size=0
+h=28&hfile=27&hfolder=0&name=FB_IMG_1685845562924.jpg&in=0&out=5000&small=2&orig_size=0
+h=33&hfile=32&hfolder=0&name=FB_IMG_1685845611794.jpg&in=0&out=5000&small=2&orig_size=0
+h=36&hfile=35&hfolder=0&name=FB_IMG_1685845645228.jpg&in=0&out=5000&small=2&orig_size=0
+sequenceclips=8
+h=7&hfile=2&hfolder=0&name=ph1.jpg.jpg&in=0&out=7000&small=2&orig_size=0&inoffset=0&outoffset=0&htransition=9&heffect=0&textoverlayactive=0&imageoverlayactive=0&narrationicon=1
+h=8&hfile=5&hfolder=0&name=FB_IMG_1685827788803.jpg&in=0&out=7000&small=2&orig_size=0&inoffset=0&outoffset=0&htransition=14&heffect=0&textoverlayactive=0&imageoverlayactive=0&narrationicon=1
+h=13&hfile=11&hfolder=0&name=20230618_090852.jpg&in=0&out=7000&small=2&orig_size=0&inoffset=0&outoffset=0&htransition=19&heffect=0&textoverlayactive=0&imageoverlayactive=0&narrationicon=1
+h=18&hfile=16&hfolder=0&name=FB_IMG_1685845536141.jpg&in=0&out=7000&small=2&orig_size=0&inoffset=0&outoffset=0&htransition=25&heffect=20&textoverlayactive=0&imageoverlayactive=0&narrationicon=1
+h=24&hfile=22&hfolder=0&name=FB_IMG_1685845570933.jpg&in=0&out=7000&small=2&orig_size=0&inoffset=0&outoffset=0&htransition=30&heffect=0&textoverlayactive=0&imageoverlayactive=0&narrationicon=1
+h=29&hfile=27&hfolder=0&name=FB_IMG_1685845562924.jpg&in=0&out=7000&small=2&orig_size=0&inoffset=0&outoffset=0&htransition=38&heffect=0&textoverlayactive=0&imageoverlayactive=0&narrationicon=1
+h=37&hfile=32&hfolder=0&name=FB_IMG_1685845611794.jpg&in=0&out=7000&small=2&orig_size=0&inoffset=0&outoffset=0&htransition=40&heffect=0&textoverlayactive=0&imageoverlayactive=0&narrationicon=1
+h=39&hfile=35&hfolder=0&name=FB_IMG_1685845645228.jpg&in=0&out=7000&small=2&orig_size=0&inoffset=0&outoffset=0&htransition=0&heffect=0&textoverlayactive=0&imageoverlayactive=0&narrationicon=1
+transitions=7
+h=9&type=2&hclipA=7&hclipB=8&durationA=1000&durationB=1000&data=&overlap=0&random=0
+h=14&type=2&hclipA=8&hclipB=13&durationA=1000&durationB=1000&data=&overlap=0&random=0
+h=19&type=2&hclipA=13&hclipB=18&durationA=1000&durationB=1000&data=&overlap=0&random=0
+h=25&type=2&hclipA=18&hclipB=24&durationA=1000&durationB=1000&data=&overlap=0&random=0
+h=30&type=2&hclipA=24&hclipB=29&durationA=1000&durationB=1000&data=&overlap=0&random=0
+h=38&type=2&hclipA=29&hclipB=37&durationA=1000&durationB=1000&data=&overlap=0&random=0
+h=40&type=2&hclipA=37&hclipB=39&durationA=1000&durationB=1000&data=&overlap=0&random=0
+effects=1
+h=20&hclip=18&effectobjects=1&applyorigimage=1&type0=21&effectindex0=0&vpeffect0=0&hidden0=0&eaa0=0&group0=0&updategroup0=0&data0=a%3D0
+subtitles=0
+sequence=7%2C8%2C13%2C18%2C24%2C29%2C37%2C39
+tracks=0
+soundclips=0&relativepath=0
+bookmarks=0

@@ -1,0 +1,212 @@
+ @import url('https://fonts.googleapis.com/css2?family=Syne:wght@400..800&display=swap');
+ @keyframes animationname {}
+ /* C'est la section de Sliding*/
+ * {box-sizing:border-box}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 520px;
+  position:relative;
+  margin: auto;
+  margin-top: -333%;
+  overflow: hidden;
+  margin-right:0px;
+}
+
+/* Hide the images by default */
+.mySlides {
+display:none;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color:white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(180, 100, 100, 0.8);
+}
+
+/* Caption text */
+.text {
+  color:white;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color:cornflowerblue;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin:0 2px;
+  background-color:aquamarine;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+  position:relative;
+  
+
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+/*Pour le corps de la page*/
+ .kika {
+    border: 2px inset whitesmoke;
+     background: url(black.jpeg) no-repeat;
+     display: 4px;
+     text-align: justify;
+     margin-top: 1550px;
+     margin-left: 30.0%;
+     width: 790px;
+     height: 2920px;
+     position:relative;
+     transform: translate(-50%, -50%);
+     padding: 30px;
+     bottom: 68px;
+     overflow: hidden;
+ }
+
+ /*.kika spam {
+     display: block;
+     top:35px;
+ }*/
+ .yellow{
+    color:blue;
+ }
+ .blanc{
+    color:white;
+ }
+ .cool{
+    color:yellow;
+ }
+ .blue{
+  color: red;
+  margin-top: -20px;
+
+ }
+
+
+ @keyframes text {
+     0% {
+         color: black;
+         margin-bottom: -20px;
+     }
+
+     20% {
+         letter-spacing: 15px;
+         margin-bottom: -40px;
+     }
+
+     85% {
+         letter-spacing: 8px;
+         margin-bottom: -40px;
+     }
+
+ }
+
+	
+.Whiterow {
+  background-color:white;/* Couleur de fond rouge */
+  color:#FF0000; /* Texte blanc */
+  padding: 10px; /* Espacement intérieur */
+  text-align: center; /* Centrer le texte */
+  position: fixed; /* Pour qu'il reste en place en haut */
+  top: 97%; /* Le placer tout en haut */
+  left: 0%; /* Le placer tout à gauche */
+  width: 100%; /* Largeur complète */
+  height:3%;
+  z-index: 100; /* S'assurer qu'il est au-dessus des autres éléments */
+  overflow: hidden; /* Cache le contenu qui dépasse */
+  box-sizing: border-box; /* Inclure padding et bordure dans la largeur totale */
+}
+
+.Whiterow p {
+  margin: 0; /* Supprimer la marge par défaut du paragraphe */
+ white-space: nowrap; /* Empêcher le texte de passer à la ligne */
+animation: scroll-left 50s linear infinite; /* Nom de l'animation, durée, etc. */
+font-size:28px;
+font-family:bold;
+font-weight: bold;
+}
+
+.Whiterow1 {
+  background-color:white;/* Couleur de fond rouge */
+  color:#FF0000; /* Texte blanc */
+  padding: 10px; /* Espacement intérieur */
+  text-align: center; /* Centrer le texte */
+  position: fixed; /* Pour qu'il reste en place en haut */
+  top: 0%; /* Le placer tout en haut */
+  left: 0%; /* Le placer tout à gauche */
+  width: 100%; /* Largeur complète */
+  height:3%;
+  z-index: 100; /* S'assurer qu'il est au-dessus des autres éléments */
+  overflow: hidden; /* Cache le contenu qui dépasse */
+  box-sizing: border-box; /* Inclure padding et bordure dans la largeur totale */
+}
+
+.Whiterow1 p {
+  margin: 0; /* Supprimer la marge par défaut du paragraphe */
+ white-space: nowrap; /* Empêcher le texte de passer à la ligne */
+animation: scroll-left 50s linear infinite; /* Nom de l'animation, durée, etc. */
+font-size:28px;
+font-family:bold;
+font-weight: bold;
+}
+
+@keyframes scroll-left {
+  0% {
+    transform: translateX(100%); /* Commencer à droite de l'écran */
+ }
+  100% {
+    transform: translateX(-100%); /* Finir à gauche de l'écran */
+ }
+}
+
+

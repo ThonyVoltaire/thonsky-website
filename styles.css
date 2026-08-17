@@ -1,0 +1,458 @@
+       @import url('https://fonts.googleapis.com/css2?family=Syne:wght@400..800&display=swap');
+
+       @keyframes animationname {}
+
+	   @media (max-width: 768px) {
+	   }
+
+       * {
+       	margin: 0px;
+       	padding: 0px;
+       	font-family: "Times New Roman", Times, serif;
+       }
+
+       nav {
+       	width: 100%;
+       	margin: 0 auto;
+
+       	background-color: white;
+       	position: relative;
+       	top: 0px;
+       }
+
+       nav ul {
+       	list-style-type: none;
+       }
+
+       nav ul li {
+       	float: left;
+       	width: 25%;
+       	text-align: center;
+       }
+
+       nav ul::after {
+       	content: "";
+       	display: table;
+       	clear: both;
+       }
+
+       nav a {
+       	display: block;
+       	text-decoration: none;
+       	color: black;
+       	border-bottom: 2px solid transparent;
+       	padding: 10px 0px;
+       }
+
+       nav a:hover {
+       	color: brown;
+       	border-bottom: 1px solid gold;
+       }
+
+       .sous {
+       	display: none;
+       	box-shadow: 0px 1px 2px #ccc;
+       	background-color: white;
+       }
+
+       nav ul li:hover .sous {
+       	display: block;
+       }
+
+       .sous li {
+       	float: none;
+       	width: 100%;
+       	text-align: left;
+       }
+
+       .sous a {
+       	padding: 3px;
+       	border-bottom: none;
+       }
+
+       .sous a:hover {
+       	border-bottom: none;
+       	background-color: RGBa(200, 200, 200, 0.1);
+       }
+
+       .deroulant>a::after {
+       	content: " ";
+       	font-size: 12px;
+       }
+
+       .sous {
+       	display: none;
+       	box-shadow: 0px 1px 1px #CCC;
+       	background-color: #0099FF;
+       	position: absolute;
+       	width: 100%;
+       	z-index: 1000;
+       }
+
+       nav ul li {
+       	float: left;
+       	width: 18%;
+       	text-align: center;
+       	position: relative;
+       }
+
+       /*&&&&&&&&&&&&&&&& Pour les lignes blanches et rouge &&&&&&&&&&&&&&&&&&&&&& */
+       .parent {
+       	position: relative;
+       	width: 100%;
+       	height: 100px;
+       	margin: 0px;
+       }
+
+       .child1 {
+       	width: 1370px;
+       	height: 150px;
+       	background: #FFFFFF;
+       	border: 3px solid white;
+       	position: relative;
+       	margin-top: 5px;
+       	margin-left: -10px;
+       }
+
+       .child2 {
+       	width: 1116px;
+       	height: 60px;
+       	background: #FF0000;
+       	border: 3px solid red;
+       	position: relative;
+       	margin-top: -66px;
+       	margin-left: 244px;
+       	border-top-left-radius: 90px;
+       }
+
+       /*&&&&&&&&&&&&&&&&&&&&& Des Heros l'indepandance &&&&&&&&&&&&&&&&&&&&&&&&&&*/
+       .conteneur {
+       	width: 20px;
+       	height: 20px;
+       }
+
+       .img {
+       	width: 280px;
+       	height: 158px;
+       	position: relative;
+       	margin-top: -100px;
+       	margin-left: -8px;
+       	border: #FF0000;
+       	border-bottom-right-radius: 90px;
+       }
+
+       .img1 {
+       	width: 90px;
+       	height: 90px;
+       	position: relative;
+       	margin-top: -120px;
+       	margin-left: 330px;
+       }
+
+       .img2 {
+       	width: 120px;
+       	height: 90px;
+       	position: relative;
+       	margin-top: -140px;
+       	margin-left: 450px;
+       }
+
+       .img3 {
+       	width: 120px;
+       	height: 90px;
+       	position: relative;
+       	margin-top: -160px;
+       	margin-left: 600px;
+       }
+
+       .img4 {
+       	width: 100px;
+       	height: 90px;
+       	position: relative;
+       	margin-top: -180px;
+       	margin-left: 750px;
+       }
+
+       .img5 {
+       	width: 100px;
+       	height: 90px;
+       	position: relative;
+       	margin-top: -200px;
+       	margin-left: 880px;
+       }
+
+       .img6 {
+       	width: 90px;
+       	height: 90px;
+       	position: relative;
+       	margin-top: -220px;
+       	margin-left: 1010px;
+       }
+
+       .p1 {
+       	font-size: 50px;
+       	color: #FFFFFF;
+       	text-shadow: 1px 2px 3px blue;
+       	position: relative;
+       	margin-top: -140px;
+       	margin-left: 300px;
+       }
+	   .p{
+		text-shadow: 2px 2px 5px black;
+	   }
+
+       /*&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&*/
+       #niv {
+       	padding: 0;
+       	margin: 0;
+       	text-align: center;
+       	position: relative;
+       	margin-top: -150px;
+       	margin-left: 1190px;
+       	color: #0000FF;
+       }
+
+       #niv li {
+       	display: inline;
+       	list-style: none;
+       }
+
+       #nif {
+       	padding: 0;
+       	margin: 0;
+       	text-align: center;
+       	position: relative;
+       	margin-top: 5px;
+       	margin-left: 1190px;
+       	color: #0000FF;
+       }
+
+       #nif li {
+       	display: inline;
+       	list-style: none;
+       }
+
+       /* &&&&&&&&&&&&&&&&&&&&&&&&&&& Partie Video&&&&&&&&&&&&&&&&&&&&&&&&&&&& */
+
+       /* Codes from Internet .......... */
+        .recentNews {
+		border: 2px outset white;
+       	background-color: white;
+       	position: relative;
+       	margin-top: 80px;
+       	width: 400px;
+       	height: 200px;
+       	margin-left: 30px;
+       }
+
+       .recentNews .news-title {
+       	text-align: center;
+       	padding-top: 40px;
+       	padding-bottom: 5px;
+       	font-family: 'nimbus-sans-condensed', sans-serif;
+       	font-size: 45px;
+       	font-weight: bold;
+       	color: #CCC;
+       }
+
+       /* for video **** */
+       .video-container {
+       	position: relative;
+       	/* Needed to make the video position absolute relative to its container */
+       	width: 50%;
+       	height: 50%;
+       	/* Make the container take up the full width of its parent */
+       	padding-bottom: 56.25%;
+       	/* 16:9 Aspect Ratio (9 / 16 = 0.5625) */
+       	height: 0;
+       	/* 	overflow: hidden;*/
+       	margin-left: 1100px;
+       	margin-top: 40px;
+       	/* Hide any overflow */
+       }
+
+       .responsive-video {
+       	position: absolute;
+       	top: 0;
+       	right: 0;
+       	width: 100%;
+       	height: 100%;
+       }
+
+       .abcd {
+       	border: 2px outset white;
+       	background: url(Cielblue.jpeg) no-repeat;
+       	/*display: 4px;*/
+       	text-align: justify;
+       	margin-top: -93px;
+       	margin-left: 160%;
+       	width: 400px;
+       	height: 250px;
+       	position: relative;
+        transform: translate(-50%, -50%);
+       	padding: 10px;
+		overflow: hidden;
+		
+       }
+
+       .abcd spam {
+        display: block;
+       	color: antiquewhite;
+       }
+
+       .ghij {
+       	border: 2px outset white;
+       	background: url(Cielblue1.jpeg) no-repeat;
+       	display: 4px;
+       	text-align: justify;
+       	margin-top: -410px;
+       	margin-left: 220%;
+       	width: 400px;
+       	height: 250px;
+       	position: relative;
+       	/*	transform: translate(-50%, -50%);*/
+        padding: 10px;
+		overflow: hidden;
+       }
+
+       .kal {
+       	color: white;
+       }
+	   .Amazon{
+		display:block;
+		margin-top: 20px;
+	   }
+
+	   .Alibaba{
+		display:block;
+		margin-left: 155px;
+		margin-top: -35px;
+	   }
+
+	   .Shein{
+		display:block;
+		margin-left: 300px;
+		margin-top: -35px;
+	   }
+
+       .ghij spam {
+       	display: block;
+       	color:antiquewhite;
+       }
+
+       .txt {
+       	color: red;
+       	font-size: 30px;
+       	text-align: center;
+       	text-decoration: #CCC;
+
+       	font-weight: 20px;
+       	letter-spacing: 2px;
+       	margin-bottom: 10px;
+       	/* 	background: yellowgreen;*/
+       	position: relative;
+        animation:none;
+		
+       }
+
+       .koul {
+       	color: white;
+       }
+
+       @font-face {
+       	font-family: MyHarrington;
+        src: url("fonts/HARNGTON.TTF");
+       }
+
+       .text {
+       	font-family: MyHarrington;
+       }
+
+
+       .text {
+       	color: red;
+       	font-size: 30px;
+       	text-align: center;
+       	font-weight: 20px;
+       	letter-spacing: 2px;
+       	margin-bottom: 10px;
+       	/* 	background: yellowgreen;*/
+       	position: relative;
+       	animation:none;
+       }
+
+       @keyframes text {
+       	0% {
+       		color: wheat;
+       		margin-bottom: -20px;
+       	}
+
+       	20% {
+       		letter-spacing: 15px;
+       		margin-bottom: -40px;
+       	}
+
+       	85% {
+       		letter-spacing: 8px;
+       		margin-bottom: -40px;
+       	}
+
+       	/* this for to add an orther web site in your container*/
+       	efgh {
+       		width: 80%;
+       		height: 40%;
+       		/* Adjust as needed */
+       		margin-top: 60;
+       		/* Center the container */
+       		padding: 20px;
+       		box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+       		/* Other styles like background color, border-radius, etc. */
+       	}
+
+       }
+
+       body {
+       	font-family: 'MyCustomFont', sans-serif;
+       	/* Fallback font included for safety */
+       }
+
+       h1 {
+       	font-family: 'MyCustomFont', serif;
+       	font-weight: bold;
+       	/* If you defined a bold variant in @font-face */
+       }
+
+	   .breaking-news {
+  background-color:white;/* Couleur de fond rouge */
+  color:#FF0000; /* Texte blanc */
+  text-shadow: 2px 2px 5px blue;
+  padding: 10px; /* Espacement intérieur */
+  text-align: center; /* Centrer le texte */
+  position: fixed; /* Pour qu'il reste en place en haut */
+  top: 94%; /* Le placer tout en haut */
+  left: 0%; /* Le placer tout à gauche */
+  width: 100%; /* Largeur complète */
+  height:6%;
+  z-index: 100; /* S'assurer qu'il est au-dessus des autres éléments */
+  overflow: hidden; /* Cache le contenu qui dépasse */
+  box-sizing: border-box; /* Inclure padding et bordure dans la largeur totale */
+}
+
+.breaking-news p {
+  margin: 0; /* Supprimer la marge par défaut du paragraphe */
+ white-space: nowrap; /* Empêcher le texte de passer à la ligne */
+animation: scroll-left 50s linear infinite; /* Nom de l'animation, durée, etc. */
+font-size:28px;
+font-family:bold;
+font-weight: bold;
+}
+
+@keyframes scroll-left {
+  0% {
+    transform: translateX(100%); /* Commencer à droite de l'écran */
+ }
+  100% {
+    transform: translateX(-100%); /* Finir à gauche de l'écran */
+ }
+}
+	

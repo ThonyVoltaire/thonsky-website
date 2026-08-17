@@ -1,0 +1,74 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+ <link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css" rel="stylesheet" />
+<link rel="stylesheet" href="formvisiteurs.css">
+<title>Contact Form - PHP/MySQL Demo Code</title>
+</head>
+<body>
+<div class="contactez-nous">
+<h1>FORUM DE LA DIASPORAT</h1>
+<p>Bienvenue au Forum de la diasporat! C'est une initiative des differents citoyens de la diasporat
+    dans le but de nous rejoindre, pour voir dans quel moyen possible nous pouvons mettre des projets
+    sociaux en Haiti pour sauver notre generation future. Si cela vous intereste, vous pouvez  nous 
+    faire parvenir votre point vue, vos critiques en remplissant le formulaire qui se trouve au-dessous
+     du texte que vous entrain de lire en ce moment. </p>
+
+<form name="formContact" method="post" action="Connect.php">
+<fieldset>
+    <legend>Vos Coordonnees</legend>
+<div>
+<label for="Nom">Nom</label>
+<input type="text" id="Nom" name="Nom" placeholder="Voltaire" required>
+</div>
+
+<div>
+<label for="Prenom">Prenom</label>
+<input type="text" id="Prenom" name="Prenom" placeholder="Thony" required>
+</div>
+
+<div>
+<label for="Pays">Pays</label>
+<input type="text" id="Pays" name="Pays" placeholder="United States" required>
+</div>
+
+<div>
+<label for="Ville">Ville</label>
+<input type="text" id="Ville" name="Ville" placeholder="New Jersey" required>
+</div>
+
+<div>
+<label for="Email">Email</label>
+<input type="text" id="Email" name="Email" placeholder="monadresse@mail.com" required>
+</div>
+</fieldset>
+
+<fieldset>
+    <legend>Laissez voter Commentaire</legend>
+<div>
+<label for="sujet">Message</label>
+<select name="sujet" id="sujet" required>
+<option value="" disabled selected hidden>Choisissez le sujet de votre message</option>
+<option value="probleme-compte">Probleme avec mon compte</option>
+<option value="question-produit">Question a propos d'un produit</option>
+<option value="suivi-commande">Suivi de ma commande</option>
+<option value="autre">Autre...</option>
+</select>
+</div>
+
+<div>
+<label for="Commentaire">Commentaire</label>
+<textarea id="Commentaire" name="Commentaire" placeholder="Bonjour, je vous contacte car...." required></textarea>
+</div>
+</fieldset>
+
+<div>
+    <button type="submit">Soumettre</button>
+    <button type="reset">Reinitialiser</button>
+</div>
+</form>
+<!--<p>Si vous voulez devenir membre de ce Forum, vous pouvez inscrire:<a href="Formemembres.html">ICI</a></p>-->
+</div>
+</body>
+</html>
