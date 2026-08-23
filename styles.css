@@ -4,14 +4,19 @@
 
 	   @media (max-width: 768px) {
 	   }
-
+/* New Code */
       * {
        	margin: 0px;
        	padding: 0px;
 		box-sizing: border-box;
        	font-family: "Times New Roman", Times, serif;
        }
-
+	img, video, canvas {
+    	max-width: 100%;
+    	height: auto;
+    	display: block;
+		}
+/* End new Code*/
        nav {
        	width: 100%;
        	margin: 0 auto;
