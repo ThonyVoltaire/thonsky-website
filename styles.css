@@ -11,11 +11,6 @@
 		box-sizing: border-box;
        	font-family: "Times New Roman", Times, serif;
        }
-	img, video, canvas {
-    	max-width: 100%;
-    	height: auto;
-    	display: block;
-		}
 /* End new Code*/
        nav {
        	width: 100%;
