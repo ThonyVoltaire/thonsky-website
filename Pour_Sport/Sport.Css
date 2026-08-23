@@ -7,8 +7,17 @@
     font-family:MyHarrington;*/
 	
 	 /* C'est la section de Sliding*/
- * {box-sizing:border-box}
+/* * {box-sizing:border-box}*/
 
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+img, video {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
 
 /* Slideshow container */
 .slideshow-container {
