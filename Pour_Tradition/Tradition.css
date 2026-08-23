@@ -4,7 +4,16 @@
 
 	@keyframes animationname {}
 	 /* C'est la section de Sliding*/
- * {box-sizing:border-box}
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+img, video {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+/* * {box-sizing:border-box}*/
 
 
 /* Slideshow container */
