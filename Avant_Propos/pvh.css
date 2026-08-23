@@ -1,6 +1,15 @@
  @import url('https://fonts.googleapis.com/css2?family=Syne:wght@400..800&display=swap');
 
  @keyframes animationname {}
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+img, video {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
 
  /* .blanc {
      color: #FFFFFF;
