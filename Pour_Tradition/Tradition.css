@@ -156,12 +156,12 @@ display:none;
 		}
 	}
 
-  /* Section Video*/
+  /* Section Video
    video{
  		width:300px;
 	    float:right;
 		position:relative;
-      }
+      }*/
   #RightVideo{
         padding:inherit;
 		position:relative;
