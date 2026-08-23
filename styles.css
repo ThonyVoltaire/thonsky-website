@@ -1,5 +1,4 @@
        @import url('https://fonts.googleapis.com/css2?family=Syne:wght@400..800&display=swap');
-
        @keyframes animationname {}
 	   @media (max-width: 768px) {
 	   }
@@ -7,7 +6,6 @@
       * {
        	margin: 0px;
        	padding: 0px;
-		box-sizing: border-box;
        	font-family: "Times New Roman", Times, serif;
        }
 
