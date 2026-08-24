@@ -3,15 +3,6 @@
 	@import url('https://fonts.googleapis.com/css2?family=Fjord+One&family=Roboto:ital,wght@0,100..900;1,100..900&family=Syne&family=Ubuntu+Sans:ital,wght@0,100..800;1,100..800&display=swap');
 
 	@keyframes animationname {}
-*, *::before, *::after {
-  box-sizing: border-box;
-}
-
-img, video {
-  max-width: 100%;
-  height: auto;
-  display: block;
-}
 	@font-face{
     font-family:MyHarrington;
     src: url("fonts/HARRINGTON.TIF");
@@ -282,7 +273,6 @@ font-weight: bold;
   animation: scroll-left 20s linear infinite; /* Nom de l'animation, durée, etc. */
   color:red;
   font-size: 20px;
-}
 
 
 
@@ -309,7 +299,6 @@ font-weight: bold;
 .Pub6 p {
   margin: 0; /* Supprimer la marge par défaut du paragraphe */
   white-space: nowrap; /* Empêcher le texte de passer à la ligne */
-  
   animation: scroll-left 20s linear infinite; /* Nom de l'animation, durée, etc. */
   color:white;
   font-size: 20px;
