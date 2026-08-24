@@ -164,27 +164,7 @@ display:none;
 			margin-bottom: -40px;
 		}
 	}
-
-  /* Section Video
-   video{
- 		width:300px;
-	    float:right;
-		position:relative;
-      }
-  #RightVideo{
-        padding:inherit;
-		position:relative;
-		top:inherit;
-		width:210px;
-		margin-top:-170px;
-		margin-right:1100px;
-		border-radius: 10px;
-		border:1px solid;
-		border-color:#FFFFFF;
-		
-     }*/
-
-     	
+   	
 .Whiterow {
   background-color:white;/* Couleur de fond rouge */
   color:#FF0000; /* Texte blanc */
@@ -242,5 +222,3 @@ font-weight: bold;
  }
 }
 
-
-  /*Fin de section Video*/

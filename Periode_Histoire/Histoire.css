@@ -282,6 +282,7 @@ font-weight: bold;
   animation: scroll-left 20s linear infinite; /* Nom de l'animation, durée, etc. */
   color:red;
   font-size: 20px;
+}
 
 
 
@@ -308,6 +309,7 @@ font-weight: bold;
 .Pub6 p {
   margin: 0; /* Supprimer la marge par défaut du paragraphe */
   white-space: nowrap; /* Empêcher le texte de passer à la ligne */
+  
   animation: scroll-left 20s linear infinite; /* Nom de l'animation, durée, etc. */
   color:white;
   font-size: 20px;
