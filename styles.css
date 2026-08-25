@@ -2,42 +2,6 @@
 
        @keyframes animationname {}
 
-	   /* for Scree larg > to 400px*/
-	   @media screen and (min-width: 400px){
-		body{color:red;}
-	   } 
-
-       /* for Scree larg < to 800px*/
-	   @media screen and (max-width:800px){
-		body{color:#000;}
-	   }
-
-	   /* for scree between 400 and 800px*/
-	   @media screen and (min-width: 400px) and (max-width: 800px){
-		body{color:#000;}
-	   }
-
-      /* for devise'screen display 1 bit by color */
-	  @media screen and (min-color:1){
-		body{background-color:black;color:white;}
-	  }
-
-	  /* for devise like table or color <= to 256 px*/
-	  @media screen and (max-color-index:256){
-		body{background-color:black;color:white;}
-	  }
-
-	  /* for screen landscape or portrit*/
-	  	  @media screen and (orientation:landscape){
-		p{-moz-column-count:2;-webkit-column-count:2;-ms-column-count:2;-o-column-count:2;column-count:2;}
-	  }
-
-	  /* for divise'screen > to 4/3*/
-	  @media screen and (min-aspect-ratio:4/3){
-		p{-moz-column-count:2;-webkit-column-count:2;-ms-column-count:2;-o-column-count:2;column-count:2;}
-	  }
-
-
 	   @media (max-width: 768px) {
 	   }
 
@@ -230,7 +194,7 @@
        	color: #FFFFFF;
        	text-shadow: 1px 2px 3px blue;
        	position: relative;
-       	margin-top: -155px;
+       	margin-top: -140px;
        	margin-left: 300px;
        }
 	   .p{
@@ -243,7 +207,7 @@
        	margin: 0;
        	text-align: center;
        	position: relative;
-       	margin-top: -165px;
+       	margin-top: -150px;
        	margin-left: 1190px;
        	color: #0000FF;
        }
@@ -258,7 +222,7 @@
        	margin: 0;
        	text-align: center;
        	position: relative;
-       	margin-top: 9px;
+       	margin-top: 5px;
        	margin-left: 1190px;
        	color: #0000FF;
        }
@@ -274,8 +238,8 @@
         .recentNews {
 		border: 2px outset white;
        	background-color: white;
-        position: relative  ;    	
-		margin-top: 115px;
+       	position: relative;
+       	margin-top: 80px;
        	width: 400px;
        	height: 200px;
        	margin-left: 30px;
@@ -320,17 +284,14 @@
        	background: url(Cielblue.jpeg) no-repeat;
        	/*display: 4px;*/
        	text-align: justify;
-		font-size : 14px;
-		margin-top: -40%;
+       	margin-top: -93px;
        	margin-left: 160%;
-		/*margin: 0 auto;   */    	
-		width: 100%;
-       	height: 117%;
-       	position: absolute;
+       	width: 400px;
+       	height: 250px;
+       	position: relative;
         transform: translate(-50%, -50%);
-       	padding: 18px;
+       	padding: 10px;
 		overflow: hidden;
-		font-family:'Times New Roman', Times, serif;
 		
        }
 
@@ -344,12 +305,11 @@
        	background: url(Cielblue1.jpeg) no-repeat;
        	display: 4px;
        	text-align: justify;
-		font-size : 14px;
-       	margin-top: -74%;
+       	margin-top: -410px;
        	margin-left: 220%;
        	width: 400px;
        	height: 250px;
-       /*	position: adsolute;*/
+       	position: relative;
        	/*	transform: translate(-50%, -50%);*/
         padding: 10px;
 		overflow: hidden;
@@ -360,7 +320,7 @@
        }
 	   .Amazon{
 		display:block;
-		margin-top: 5px;
+		margin-top: 20px;
 	   }
 
 	   .Alibaba{
@@ -451,23 +411,10 @@
 
        }
 
-	body {
-  /* Scales continuously from 16px on mobile up to 20px on desktop */
-  font-size: clamp(1rem, 0.9rem + 0.5vw, 1.25rem);
-  line-height: 1.6;
-  margin: 0;
-  font-family: system-ui, -apple-system, sans-serif;
-}
-
-/* Headings scale automatically using rem */
-h1 { font-size: 2rem; }   /* 32px to 40px depending on device */
-h2 { font-size: 1.5rem; } /* 24px to 30px depending on device */
-p  { font-size: 1rem; }   /* Follows base body size */
-
-      /* body {
+       body {
        	font-family: 'MyCustomFont', sans-serif;
-       	Fallback font included for safety 
-       }*/
+       	/* Fallback font included for safety */
+       }
 
        h1 {
        	font-family: 'MyCustomFont', serif;
@@ -482,21 +429,20 @@ p  { font-size: 1rem; }   /* Follows base body size */
   padding: 10px; /* Espacement intérieur */
   text-align: center; /* Centrer le texte */
   position: fixed; /* Pour qu'il reste en place en haut */
-  margin-top:8.5%;/* Le placer tout en haut */
+  top: 94%; /* Le placer tout en haut */
   left: 0%; /* Le placer tout à gauche */
-  width: 101%; /* Largeur complète */
-  height: 5%;
-  z-index: 90; /* S'assurer qu'il est au-dessus des autres éléments */
+  width: 100%; /* Largeur complète */
+  height:6%;
+  z-index: 100; /* S'assurer qu'il est au-dessus des autres éléments */
   overflow: hidden; /* Cache le contenu qui dépasse */
   box-sizing: border-box; /* Inclure padding et bordure dans la largeur totale */
-
 }
 
 .breaking-news p {
-  margin-top: 1%x; /* Supprimer la marge par défaut du paragraphe */
+  margin: 0; /* Supprimer la marge par défaut du paragraphe */
  white-space: nowrap; /* Empêcher le texte de passer à la ligne */
 animation: scroll-left 50s linear infinite; /* Nom de l'animation, durée, etc. */
-font-size:18px;
+font-size:28px;
 font-family:bold;
 font-weight: bold;
 }
