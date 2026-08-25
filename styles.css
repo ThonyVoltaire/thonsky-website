@@ -37,13 +37,13 @@
 		p{-moz-column-count:2;-webkit-column-count:2;-ms-column-count:2;-o-column-count:2;column-count:2;}
 	  }
  
-	/*  @media screen and (min-width: 1024px) {
+	  @media screen and (min-width: 1024px) {
  		 body {
    		 background-color: #f0f0f0;
    		 font-size: 16px;
  		 }
 
-		}*/
+		}
 
 	   @media (max-width: 768px) {
 	   }
