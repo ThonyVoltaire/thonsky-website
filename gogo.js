@@ -8,6 +8,10 @@ function plusSlides(n) {
 function currentSlide(n) {
     showSlides(slideIndex = n);
 }
+document.addEventListener("DOMContentLoaded", () => {
+    // Your JavaScript code goes here
+    console.log("Website loaded successfully on this browser!");
+});
 
 function showSlides(n) {
   let slides = document.getElementsByClassName('slides');
@@ -27,9 +31,9 @@ function showSlides(n) {
     dots[i].classList.remove('active');
   }
   
-  // Afficher la slide demandée
+  // Afficher la slide demandï¿½e
   slides[slideIndex - 1].style.display = 'block';
   
-  // Ajouter "active" sur le point cliqué
+  // Ajouter "active" sur le point cliquï¿½
   dots[slideIndex - 1].classList.add('active');
 }
