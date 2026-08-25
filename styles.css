@@ -9,23 +9,23 @@
 
        /* for Scree larg < to 800px*/
 	   @media screen and (max-width:800px){
-		body{color:#000;}
+		/*body{color:#000;}*/
 	   }
 
 	   /* for scree between 400 and 800px*/
 	   @media screen and (min-width: 400px) and (max-width: 800px){
-		body{color:#000;}
+		/*body{color:#000;}*/
 	   }
 
       /* for devise'screen display 1 bit by color */
 	  @media screen and (min-color:1){
-		body{background-color:black;color:white;}
+		/*body{background-color:black;color:white;}*/
 	  }
 
-	  /* for devise like table or color <= to 256 px
+	  /* for devise like table or color <= to 256 px*/
 	  @media screen and (max-color-index:256){
-		body{background-color:black;color:white;}
-	  }*/
+		/*body{background-color:black;color:white;}*/
+	  }
 
 	  /* for screen landscape or portrit*/
 	  	  @media screen and (orientation:landscape){
