@@ -22,10 +22,10 @@
 		body{background-color:black;color:white;}
 	  }
 
-	  /* for devise like table or color <= to 256 px*/
+	  /* for devise like table or color <= to 256 px
 	  @media screen and (max-color-index:256){
 		body{background-color:black;color:white;}
-	  }
+	  }*/
 
 	  /* for screen landscape or portrit*/
 	  	  @media screen and (orientation:landscape){
