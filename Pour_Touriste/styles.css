@@ -1,0 +1,202 @@
+ /* ==========================================================================
+   FUSION ET MODERNISATION DE LA PAGE TOURISME AVEC EFFETS EXCLUSIFS
+   ========================================================================== */
+
+/* Structure générale à deux colonnes fluides */
+.layout-tourisme {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 30px;
+  margin-top: 15px;
+}
+
+@media (min-width: 1024px) {
+  .layout-tourisme {
+    grid-template-columns: 2.3fr 1fr; /* Distribution parfaite pour votre écran d'ordinateur HP */
+  }
+}
+
+/* Bouton de retour à l'accueil */
+.bouton-retour-tourisme {
+  color: #ffcc00;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1.1rem;
+}
+.bouton-retour-tourisme:hover {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+/* Bloc de rédaction principal (Hérité de votre boîte .kika avec ajustements fluides) */
+.bloc-redaction-tourisme {
+  border: 2px inset whitesmoke; /* Votre bordure d'origine préservée */
+  background-color: rgba(0, 0, 0, 0.85); /* Fond sombre de sécurité (Hérité de votre black.jpeg) */
+  padding: 30px;
+  border-radius: 12px;
+  text-align: justify;
+}
+
+/* Votre titre principal rouge (Hérité de la classe .blue de votre code) */
+.titre-principal-tourisme {
+  font-size: 2.2rem;
+  color: red; /* Votre rouge exact */
+  margin-top: 0;
+  margin-bottom: 25px;
+  font-weight: bold;
+  text-shadow: 2px 2px 4px rgba(0,0,0,0.6);
+  text-align: center;
+}
+
+/* Sections et sous-titres bleus (Hérité de votre classe .yellow) */
+.section-touristique h2 {
+  font-size: 1.5rem;
+  color: blue; /* Votre bleu de sous-titre exact */
+  margin-top: 25px;
+  margin-bottom: 15px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-weight: bold;
+}
+
+/* Textes de paragraphes blancs (Hérité de votre classe .blanc) */
+.section-touristique p {
+  font-size: 1.15rem;
+  line-height: 1.7;
+  margin-bottom: 15px;
+  color: white; /* Votre texte blanc exact */
+}
+
+/* Encart pour le lien Citadelle (Hérité de votre classe .cool) */
+.bloc-reference {
+  background: rgba(255, 255, 255, 0.08);
+  padding: 12px 20px;
+  border-radius: 6px;
+  border-left: 4px solid yellow; /* Votre repère jaune */
+  margin: 15px 0;
+}
+
+.bloc-reference p {
+  margin: 0;
+  font-size: 1.05rem;
+  color: yellow; /* Votre couleur jaune exacte */
+}
+
+.bloc-reference a {
+  color: #00FF99; /* Votre vert fluo d'origine pour le lien cliquable */
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+/* Liste des éléments à puces */
+.section-touristique ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+/* --- STRUCTURE DE LA SIDEBAR UNIVERSELLE DE DROITE --- */
+.sidebar-tourisme {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+
+.carte-appel-voyage {
+  background: #d21034;
+  color: #ffffff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+}
+
+.carte-appel-voyage h3 {
+  font-size: 1.3rem;
+  margin-bottom: 10px;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.widget-incontournables {
+  background: #111111;
+  padding: 20px;
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.widget-incontournables h3 {
+  font-size: 1.2rem;
+  color: #ffcc00;
+  margin-bottom: 15px;
+  font-weight: bold;
+}
+
+.liste-lieux {
+  list-style: none;
+  padding-left: 0;
+}
+
+.liste-lieux li {
+  font-size: 1.05rem;
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: #ffffff;
+}
+
+.liste-lieux li i {
+  color: aquamarine; /* Pastille assortie à vos choix de dots */
+}
+
+/* Zone publicitaire de la barre latérale */
+.zone-publicitaire-tourisme {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.encart-pub-tourisme {
+  background: rgba(255, 255, 255, 0.07);
+  border: 1px dashed rgba(255, 255, 255, 0.2);
+  padding: 15px;
+  text-align: center;
+  border-radius: 6px;
+  font-size: 0.9rem;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+/* --- VOS BARRES ANIMEES UNIVERSELLES FIXES (Whiterow & Whiterow1) --- */
+.Whiterow, .Whiterow1 {
+  background-color: white;
+  color: #FF0000;
+  padding: 5px 10px;
+  text-align: center;
+  position: fixed;
+  width: 100%;
+  height: 35px;
+  z-index: 999;
+  overflow: hidden;
+  box-sizing: border-box;
+}
+
+.Whiterow { top: calc(100% - 35px); border-top: 2px solid #FF0000; }
+.Whiterow1 { top: 0; border-bottom: 2px solid #FF0000; }
+
+.Whiterow p, .Whiterow1 p {
+  margin: 0;
+  white-space: nowrap;
+  animation: scroll-left-global 50s linear infinite; /* Votre vitesse de 50 secondes */
+  font-size: 24px;
+  font-weight: bold;
+  line-height: 25px;
+}
+
+/* Animation globale de défilement de droite à gauche */
+@keyframes scroll-left-global {
+  0% { transform: translateX(100%); }
+  100% { transform: translateX(-100%); }
+}
+

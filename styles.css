@@ -15,7 +15,7 @@ body {
 
 /* --- Menu de Navigation Responsif --- */
 .navigation-principale {
-  background-color: #111;
+  background-color:#ffffff;
   padding: 10px;
   border-radius: 8px;
   margin-bottom: 25px;
@@ -34,7 +34,7 @@ body {
 }
 
 .deroulant > a {
-  color: #fff;
+  color:#002366;
   text-decoration: none;
   font-size: 16px;
 }
@@ -70,13 +70,14 @@ body {
 /* --- En-tête Titre --- */
 .entete-titre {
   text-align: center;
-  margin: 30px 0;
+  margin: 2px 0;
 }
 
 .p1 {
-  font-size: 2.5rem;
+  font-size: 3.3rem;
   font-weight: bold;
-  color: #ffcc00; /* Or/Jaune pour faire ressortir */
+  color:white; /* Or/Jaune pour faire ressortir */
+  
 }
 
 /* --- Section Contacts --- */
@@ -84,31 +85,32 @@ body {
   display: flex;
   justify-content: center;
   gap: 40px;
-  margin-bottom: 30px;
+  margin-bottom: 10px;
   flex-wrap: wrap;
 }
 
-.contact-item {
-  background: rgba(255, 255, 255, 0.1);
+/*.contact-item {
+  background: rgba(241, 239, 241, 0.1);
   padding: 15px 25px;
   border-radius: 8px;
-  text-align: center;
+  text-align:center;
   min-width: 200px;
-}
+  margin-left: 85%;
+}*/
 
 /* --- Galerie Photo des Héros (Magie du Grid) --- */
 .galerie-heros {
   display: grid;
   /* Crée automatiquement autant de colonnes de 250px que l'écran le permet */
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 20px;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 0.1rem;
   margin-bottom: 40px;
 }
 
 .carte-photo {
-  background-color: #fff;
-  padding: 10px;
-  border-radius: 8px;
+  background-color:#fff;
+  padding: 2px;
+  border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0,0,0,0.3);
   transition: transform 0.2s;
 }
@@ -121,7 +123,7 @@ body {
   width: 100%;
   height: 200px;
   object-fit: cover; /* Recadre proprement sans déformer la photo */
-  border-radius: 4px;
+  border-radius: 8px;
 }
 
 /* --- Zone de Contenu Principale --- */
@@ -152,7 +154,7 @@ body {
   background-color: #d21034;
   color: white;
   padding: 5px 12px;
-  font-weight: bold;
+  font-weight:bold;
   border-radius: 4px;
   margin-bottom: 15px;
 }

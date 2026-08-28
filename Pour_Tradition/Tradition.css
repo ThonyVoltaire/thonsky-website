@@ -1,234 +1,254 @@
-	@import url('https://fonts.googleapis.com/css2?family=Syne:wght@400..800&display=swap');
-	@import url('https://fonts.googleapis.com/css2?family=Fjord+One&family=Roboto:ital,wght@0,100..900;1,100..900&family=Syne&display=swap');
-	@import url('https://fonts.googleapis.com/css2?family=Fjord+One&family=Roboto:ital,wght@0,100..900;1,100..900&family=Syne&family=Ubuntu+Sans:ital,wght@0,100..800;1,100..800&display=swap');
+/* ==========================================================================
+   FUSION ET MODERNISATION DE LA PAGE TRADITIONS ET MUSIQUE RARA
+   ========================================================================== */
 
-	@keyframes animationname {}
-	 /* C'est la section de Sliding*/
- * {box-sizing:border-box}
+/* Importation de vos polices Google Fonts favorites */
+@import url('https://googleapis.com');
 
+/* Grille principale adaptative pour grand écran de PC HP All-in-One */
+.layout-tradition {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 30px;
+  margin-top: 15px;
+}
 
-/* Slideshow container */
+@media (min-width: 1024px) {
+  .layout-tradition {
+    grid-template-columns: 2fr 1.3fr; /* Distribution idéale entre récits et médias */
+  }
+}
+
+/* Bloc texte traditions (Hérité de votre conteneur .pqpq avec ajustements fluides) */
+.bloc-info-tradition {
+  background-color: rgba(0, 0, 0, 0.75); /* Fond sombre de sécurité (Hérité de votre image de fond) */
+  padding: 30px;
+  border-radius: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  text-align: justify;
+}
+
+/* Votre titre principal de laïcité (Hérité de votre classe .yellow de votre CSS) */
+.titre-principal-tradition {
+  font-size: 2.2rem;
+  color: red; /* Votre rouge exact */
+  margin-top: 0;
+  margin-bottom: 25px;
+  font-weight: bold;
+  text-shadow: 2px 2px 5px white; /* Votre effet d'ombre blanche exact */
+  text-align: center;
+}
+
+/* Votre titre secondaire pour le Rara (Hérité de votre classe .red) */
+.titre-secondaire-rara {
+  font-size: 1.8rem;
+  color: red; /* Votre rouge de sous-titre exact */
+  margin-top: 35px;
+  margin-bottom: 15px;
+  text-shadow: 2px 2px 5px white; /* Votre effet d'ombre blanche exact */
+  font-weight: bold;
+  text-align: center;
+}
+
+/* Textes de paragraphes et listes (Hérités de .blanch et .blanc) */
+.texte-tradition-laicite, 
+.texte-tradition-rara, 
+.liste-details-rara li {
+  color: white; /* Votre texte blanc exact */
+  font-size: 1.15rem;
+  line-height: 1.7;
+}
+
+.liste-points-titre {
+  font-size: 1.3rem;
+  color: #ffcc00;
+  margin-top: 25px;
+  margin-bottom: 15px;
+}
+
+/* Liste des détails sur le Rara */
+.liste-details-rara {
+  list-style: none;
+  padding-left: 0;
+}
+
+.liste-details-rara li {
+  margin-bottom: 12px;
+  position: relative;
+  padding-left: 25px;
+}
+
+.liste-details-rara li::before {
+  content: "🎺"; /* Petite trompette vaccine thématique pour les puces du Rara */
+  position: absolute;
+  left: 0;
+}
+
+/* Encart de sources pour Wikipédia et le Comité */
+.source-officielle-laicite, .source-officielle-rara {
+  background: rgba(255, 255, 255, 0.08);
+  padding: 15px;
+  border-radius: 8px;
+  margin-top: 20px;
+  border-left: 4px solid red;
+}
+
+.source-officielle-laicite p, .source-officielle-rara p {
+  margin: 0 0 5px 0;
+  font-size: 1rem;
+}
+
+.source-officielle-laicite a, .source-officielle-rara a {
+  color: #00FF99; /* Votre vert fluo d'origine pour vos liens cliquables */
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+/* --- STRUCTURE DE LA SIDEBAR UNIVERSELLE DE DROITE (MEDIAS) --- */
+.sidebar-tradition {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+
+.titre-slideshow-tradition {
+  font-size: 1.3rem;
+  color: #ffcc00;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+  padding-bottom: 8px;
+}
+
+/* Boîte du diaporama nettoyée des marges négatives */
 .slideshow-container {
-  max-width: 250px;
-  position:relative;
-  margin: auto;
-  margin-top: -80.5%;
+  max-width: 250px; /* Votre largeur maximale de 250px exacte préservée */
+  position: relative;
+  margin: 0 auto;   /* Centrage automatique sain */
   overflow: hidden;
-  margin-right:0px;
+  border: 4px solid #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.5);
+  background-color: #000000;
 }
 
-/* Hide the images by default */
-.mySlides {
-display:none;
+/* Cache les diapos par défaut */
+.mySlides-tradition {
+  display: none;
 }
 
-/* Next & previous buttons */
-.prev, .next {
+.mySlides-tradition img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover; /* Empêche les déformations d'images */
+}
+
+/* Flèches manuelles de contrôle */
+.prev-trad, .next-trad {
   cursor: pointer;
   position: absolute;
   top: 50%;
   width: auto;
   margin-top: -22px;
   padding: 16px;
-  color:white;
+  color: white;
   font-weight: bold;
   font-size: 18px;
   transition: 0.6s ease;
   border-radius: 0 3px 3px 0;
   user-select: none;
-
+  text-decoration: none !important;
+  background-color: rgba(0, 0, 0, 0.3);
 }
 
-/* Position the "next button" to the right */
-.next {
+.next-trad {
   right: 0;
   border-radius: 3px 0 0 3px;
 }
 
-/* On hover, add a black background color with a little bit see-through */
-.prev:hover, .next:hover {
-  background-color: rgba(180, 100, 100, 0.8);
+.prev-trad:hover, .next-trad:hover {
+  background-color: rgba(180, 100, 100, 0.8); /* Votre couleur d'interaction exacte */
 }
 
-/* Caption text */
-.text {
-  color:white;
-  font-size: 15px;
-  padding: 8px 12px;
-  position: absolute;
-  bottom: 8px;
-  width: 100%;
-  text-align: center;
-}
-.blanc{
-  color: white;
-  
-}
-.red{
-    color:red;
-    margin-left: 260px;
-    text-shadow: 2px 2px 5px white;
-}
-
-/* Number text (1/3 etc) */
+/* Texte indicateur de numéro (Hérité de .numbertext) */
 .numbertext {
-  color:cornflowerblue;
+  color: cornflowerblue; /* Votre bleu de numérotation exact */
   font-size: 12px;
   padding: 8px 12px;
   position: absolute;
   top: 0;
+  z-index: 10;
 }
 
-/* The dots/bullets/indicators */
-.dot {
+/* --- VOS BULLES DE NAVIGATION / POINTS (Hérité de .dot) --- */
+.zone-dots {
+  text-align: center;
+  margin-top: 10px;
+}
+
+.dot-trad {
   cursor: pointer;
-  height: 8px;
-  width: 8px;
-  margin:0 2px;
-  background-color:deepskyblue;
+  height: 8px; /* Votre hauteur exacte de 8px */
+  width: 8px;  /* Votre largeur exacte de 8px */
+  margin: 0 2px;
+  background-color: deepskyblue; /* Votre couleur bleu foncé exacte */
   border-radius: 50%;
   display: inline-block;
   transition: background-color 0.6s ease;
-  position:relative;
 }
 
-.active, .dot:hover {
-  background-color:white;
+.active-dot-trad, .dot-trad:hover {
+  background-color: white; /* Devient blanc à l'activation ou au survol */
 }
 
+/* Effet d'animation de transition douce */
+.fade {
+  animation-name: fadeEffect;
+  animation-duration: 1.5s;
+}
 
-@keyframes fade {
-  from {opacity: .4}
+@keyframes fadeEffect {
+  from {opacity: .4} 
   to {opacity: 1}
 }
 
-
-/* Pour la section */
-
-	.pqpq {
-		/*border: 2px inset white;*/
-		background: url(download.jpeg) no-repeat;
-		text-align: justify;
-		margin-top: 30%;
-		margin-left: 670px;
-		width: 790px;
-		height: 720px;
-		position: relative;
-		transform: translate(-50%, -50%);
-		padding: 30px;
-	}
-  .yellow{
-    color:red;
-    margin-left: 160px;
-    text-shadow: 2px 2px 5px white;
-  }
-
-/*
-	.pqpq spam {
-		display: block;
-	}
-*/
-	.text {
-		color: antiquewhite;
-    margin-bottom: 40px;
-	}
-
-	.blanch {
-		color: white;
-	}
-
-
-
-	@keyframes text {
-		0% {
-			color: white;
-			margin-bottom: -20px;
-		}
-
-		20% {
-			letter-spacing: 15px;
-			margin-bottom: -40px;
-		}
-
-		85% {
-			letter-spacing: 8px;
-			margin-bottom: -40px;
-		}
-	}
-
-  /* Section Video*/
-   video{
- 		width:300px;
-	    float:right;
-		position:relative;
-      }
-  #RightVideo{
-        padding:inherit;
-		position:relative;
-		top:inherit;
-		width:210px;
-		margin-top:-170px;
-		margin-right:1100px;
-		border-radius: 10px;
-		border:1px solid;
-		border-color:#FFFFFF;
-		
-     }
-
-     	
-.Whiterow {
-  background-color:white;/* Couleur de fond rouge */
-  color:#FF0000; /* Texte blanc */
-  padding: 10px; /* Espacement intérieur */
-  text-align: center; /* Centrer le texte */
-  position: fixed; /* Pour qu'il reste en place en haut */
-  top: 97%; /* Le placer tout en haut */
-  left: 0%; /* Le placer tout à gauche */
-  width: 100%; /* Largeur complète */
-  height:3%;
-  z-index: 100; /* S'assurer qu'il est au-dessus des autres éléments */
-  overflow: hidden; /* Cache le contenu qui dépasse */
-  box-sizing: border-box; /* Inclure padding et bordure dans la largeur totale */
+/* --- SECTION VIDEO INTEGRÉE ET RESPONSIVE (Héritée de #RightVideo) --- */
+.sidebar-tradition video {
+  width: 100%;
+  max-width: 300px; /* Votre largeur maximale de 300px préservée */
+  margin: 10px auto 0 auto;
+  border-radius: 10px; /* Votre arrondi exact de 10px */
+  border: 1px solid #FFFFFF; /* Votre bordure blanche exacte */
+  box-shadow: 0 4px 10px rgba(0,0,0,0.5);
+  display: block;
 }
 
-.Whiterow p {
-  margin: 0; /* Supprimer la marge par défaut du paragraphe */
- white-space: nowrap; /* Empêcher le texte de passer à la ligne */
-animation: scroll-left 50s linear infinite; /* Nom de l'animation, durée, etc. */
-font-size:28px;
-font-family:bold;
-font-weight: bold;
+/* --- VOS BARRES ANIMEES UNIVERSELLES FIXES (Whiterow & Whiterow1) --- */
+.Whiterow, .Whiterow1 {
+  background-color: white;
+  color: #FF0000;
+  padding: 5px 10px;
+  text-align: center;
+  position: fixed;
+  width: 100%;
+  height: 35px;
+  z-index: 999;
+  overflow: hidden;
+  box-sizing: border-box;
 }
 
-.Whiterow1 {
-  background-color:white;/* Couleur de fond rouge */
-  color:#FF0000; /* Texte blanc */
-  padding: 10px; /* Espacement intérieur */
-  text-align: center; /* Centrer le texte */
-  position: fixed; /* Pour qu'il reste en place en haut */
-  top: 0%; /* Le placer tout en haut */
-  left: 0%; /* Le placer tout à gauche */
-  width: 100%; /* Largeur complète */
-  height:3%;
-  z-index: 100; /* S'assurer qu'il est au-dessus des autres éléments */
-  overflow: hidden; /* Cache le contenu qui dépasse */
-  box-sizing: border-box; /* Inclure padding et bordure dans la largeur totale */
+.Whiterow { top: calc(100% - 35px); border-top: 2px solid #FF0000; }
+.Whiterow1 { top: 0; border-bottom: 2px solid #FF0000; }
+
+.Whiterow p, .Whiterow1 p {
+  margin: 0;
+  white-space: nowrap;
+  animation: scroll-left-global 50s linear infinite; /* Votre vitesse de 50 secondes exacte */
+  font-size: 24px;
+  font-weight: bold;
+  line-height: 25px;
 }
 
-.Whiterow1 p {
-  margin: 0; /* Supprimer la marge par défaut du paragraphe */
- white-space: nowrap; /* Empêcher le texte de passer à la ligne */
-animation: scroll-left 50s linear infinite; /* Nom de l'animation, durée, etc. */
-font-size:28px;
-font-family:bold;
-font-weight: bold;
-}
-
-@keyframes scroll-left {
-  0% {
-    transform: translateX(100%); /* Commencer à droite de l'écran */
- }
-  100% {
-    transform: translateX(-100%); /* Finir à gauche de l'écran */
- }
+/* Animation globale de défilement de droite à gauche */
+@keyframes scroll-left-global {
+  0% { transform: translateX(100%); }
+  100% { transform: translateX(-100%); }
 }

@@ -1,0 +1,80 @@
+/* ==========================================================================
+   FUSION ET MODERNISATION DE LA PAGE SPORTS AVEC EFFETS EXCLUSIFS
+   ========================================================================== */
+
+/* Reset et Polices hérités de votre code original */
+.blue {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Grille principale adaptative pour grand écran d'ordinateur */
+.layout-sport {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 30px;
+  margin-top: 15px;
+}
+
+@media (min-width: 1024px) {
+  .layout-sport {
+    grid-template-columns: 2fr 1.2fr; /* Équilibre parfait sur votre écran HP */
+  }
+}
+
+/* --- En-tête Titre --- */
+.entete-titre {
+  text-align: center;
+  margin: 2px 0;
+}
+
+.section-contenu {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(30px, 1fr));
+  gap: 25px;
+  margin-bottom: 40px;
+}
+
+.bloc-info, .bloc-kals {
+  background: rgba(255, 255, 255, 0.05);
+  padding: 25px;
+  border-radius: 10px;
+  border-left: 5px solid #d21034;
+}
+
+/* Badges Publicitaires */
+ .badge-info, .badge-kals {
+  display: inline-block;
+
+  background-color: #d21034;
+  color: white;
+  padding: 5px 12px;
+  font-weight:bold;
+  border-radius: 4px;
+  margin-bottom: 15px;
+}
+
+.badge-kals {
+  background-color: #ffcc00;
+  color: #111;
+}
+
+
+/* --- Bandeau Défilant Bas de Page --- */
+.bandeau-defilant {
+  background-color: #d21034;
+  padding: 15px;
+  border-radius: 6px;
+  text-align: center;
+  font-weight: bold;
+}
+
+
+/* --- Ajustements spécifiques très grands écrans (Ex: Votre HP Tout-en-un) --- */
+@media (min-width: 1400px) {
+  body {
+    max-width: 1300px;
+    margin: 0 auto; /* Centre la page pour éviter qu'elle s'étale à l'infini */
+  }
+}

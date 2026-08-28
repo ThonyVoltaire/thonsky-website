@@ -1,0 +1,126 @@
+
+/* ==========================================================================
+   STYLES POUR LE FORMULAIRE DE CONTACT
+   ========================================================================== */
+.contactez-nous {
+  max-width: 800px;
+  margin: 0 auto;
+  background: rgba(255, 255, 255, 0.05);
+  padding: 30px;
+  border-radius: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.entete-formulaire h1 {
+  text-align: center;
+  color: #ffcc00;
+  font-size: 2.2rem;
+  margin-bottom: 15px;
+}
+
+.description-formulaire {
+  font-size: 1.05rem;
+  line-height: 1.6;
+  text-align: justify;
+  margin-bottom: 30px;
+  opacity: 0.9;
+}
+
+.cadre-formulaire {
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  padding: 20px;
+  border-radius: 8px;
+  margin-bottom: 25px;
+}
+
+.legende-formulaire {
+  color: #ffcc00;
+  font-weight: bold;
+  font-size: 1.2rem;
+  padding: 0 10px;
+  border-bottom: none;
+  width: auto;
+}
+
+.groupe-champ {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-bottom: 15px;
+}
+
+/* Alignement côte à côte des champs uniquement sur grand écran d'ordinateur */
+@media (min-width: 600px) {
+  .cadre-formulaire {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
+  }
+  .groupe-champ-large, .groupe-champ:nth-last-child(1) {
+    grid-column: span 2; /* Le dernier élément prend toute la largeur */
+  }
+}
+
+.groupe-champ label {
+  font-weight: 600;
+  font-size: 0.95rem;
+}
+
+.groupe-champ input, 
+.groupe-champ select, 
+.groupe-champ textarea {
+  padding: 10px 12px;
+  border-radius: 6px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  background: rgba(0, 0, 0, 0.2);
+  color: white;
+  font-size: 1rem;
+}
+
+.groupe-champ textarea {
+  height: 120px;
+  resize: vertical;
+}
+
+.groupe-champ input:focus, 
+.groupe-champ select:focus, 
+.groupe-champ textarea:focus {
+  outline: none;
+  border-color: #ffcc00;
+  box-shadow: 0 0 5px rgba(255, 204, 0, 0.5);
+}
+
+/* Boutons d'action */
+.zone-boutons-form {
+  display: flex;
+  gap: 15px;
+  justify-content: flex-end;
+}
+
+.btn-soumettre, .btn-reinitialiser {
+  padding: 12px 30px;
+  border: none;
+  border-radius: 6px;
+  font-weight: bold;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background 0.2s;
+}
+
+.btn-soumettre {
+  background-color: #ffcc00;
+  color: #111;
+}
+
+.btn-soumettre:hover {
+  background-color: #e6b800;
+}
+
+.btn-reinitialiser {
+  background-color: rgba(255, 255, 255, 0.1);
+  color: white;
+}
+
+.btn-reinitialiser:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+}

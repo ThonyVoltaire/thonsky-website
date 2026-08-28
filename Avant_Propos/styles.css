@@ -1,0 +1,200 @@
+/* ==========================================================================
+   STYLES SPECIFIQUES POUR LA PAGE D'INTRODUCTION (PVH)
+   ========================================================================== */
+
+/* Structure à deux colonnes pour grand écran (Texte + Sidebar) */
+.section-presentation {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  gap: 30px;
+  margin-top: 20px;
+}
+
+/* Ajustement si l'écran est très grand pour donner plus de place au texte */
+@media (min-width: 1024px) {
+  .section-presentation {
+    grid-template-columns: 2fr 1fr;
+  }
+}
+
+/* Bloc texte de présentation */
+.bloc-texte-pvh {
+  background: rgba(255, 255, 255, 0.05);
+  padding: 30px;
+  border-radius: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.titre-pvh {
+  font-size: 2.5rem;
+  color: #ffcc00;
+  margin-bottom: 20px;
+  border-bottom: 2px solid #d21034;
+  padding-bottom: 10px;
+}
+
+.sous-titre-pvh {
+  font-size: 1.8rem;
+  color: #ffcc00;
+  margin-top: 30px;
+  margin-bottom: 15px;
+}
+
+.texte-intro {
+  font-size: 1.1rem;
+  margin-bottom: 15px;
+  text-align: justify;
+}
+
+/* Barre latérale droite (Sidebar) */
+.sidebar-pvh {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+
+/* Carte du pays (Fluide et centrée) */
+.carte-pays img {
+  width: 100%; /* Prend toute la place sur smartphone pour être bien lisible */
+  max-width: 280px; /* Évite qu'elle ne devienne géante sur PC */
+  height: auto;
+  border-radius: 10px;
+  display: block;
+  margin: 0 auto; /* Centre automatiquement l'image dans la colonne */
+  box-shadow: 0 4px 15px rgba(0,0,0,0.5);
+  border: 3px solid #ffffff;
+}
+
+/* Ajustement spécifique de la carte pour votre écran de PC HP All-in-One */
+@media (min-width: 1024px) {
+  .carte-pays img {
+    width: 70%; /* Taille idéale pour votre barre latérale sur grand écran */
+  }
+}
+
+/* Boîtes widgets (Lecteurs et radios) */
+.lecteur-ambiance, .widget-radio {
+  background: #111111;
+  padding: 20px;
+  border-radius: 10px;
+  border-left: 4px solid #ffcc00;
+}
+
+.lecteur-ambiance h3, .widget-radio h3 {
+  font-size: 1.3rem;
+  color: #ffcc00;
+  margin-bottom: 15px;
+}
+
+.lecteur-ambiance audio {
+  width: 100%;
+}
+
+/* Liste des liens radio */
+.radio-instruction {
+  font-size: 0.95rem;
+  margin-bottom: 15px;
+  opacity: 0.9;
+}
+
+.liste-radios {
+  list-style: none;
+  padding-left: 0;
+}
+
+.liste-radios li {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  padding: 10px 0;
+  border-bottom: 1px solid rgba(255,255,255,0.1);
+}
+
+.liste-radios li:last-child {
+  border-bottom: none;
+}
+
+.liste-radios img {
+  width: 35px;
+  height: 35px;
+  object-fit: cover;
+  border-radius: 4px;
+  background: white;
+}
+
+.liste-radios a {
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.2s;
+}
+
+.liste-radios a:hover {
+  color: #d21034;
+}
+
+/* Encarts publicitaires secondaires */
+.zone-publicitaire-pvh {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+}
+
+.encart-pub {
+  background: rgba(255, 255, 255, 0.1);
+  font-size: 0.85rem;
+  padding: 15px;
+  text-align: center;
+  border-radius: 6px;
+  border: 1px dashed rgba(255,255,255,0.3);
+}
+
+/* Zone de Vote en bas */
+.zone-vote-pvh {
+  margin-top: 40px;
+  background: rgba(0, 0, 0, 0.3);
+  padding: 25px;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.zone-vote-pvh p {
+  font-size: 1.2rem;
+  margin-bottom: 15px;
+}
+
+.boutons-vote {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.bouton-vote {
+  padding: 10px 25px;
+  font-size: 1rem;
+  font-weight: bold;
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+  color: white;
+  transition: background 0.2s, transform 0.1s;
+}
+
+.vote-oui { background-color: #28a745; }
+.vote-non { background-color: #dc3545; }
+
+.bouton-vote:hover {
+  transform: translateY(-2px);
+  filter: brightness(1.1);
+}
+
+.bouton-vote.active {
+  box-shadow: 0 0 0 4px #ffcc00;
+}
+
+.compteur {
+  background: rgba(0,0,0,0.2);
+  padding: 2px 8px;
+  border-radius: 10px;
+  margin-left: 5px;
+}
